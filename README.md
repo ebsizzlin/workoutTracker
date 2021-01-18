@@ -2,7 +2,7 @@
 
 ## Description
 
-A MongoDB application to create and track daily workouts. User is able to log multiple exercises in a workout on a given day and track the name, type, weeight, sets, reps, and duration of exercise. For cardio, the distance travled can be tracked.
+A MongoDB application to create and track daily workouts. User is able to log multiple exercises in a workout on a given day and track the name, type, weight, sets, reps, and duration of exercise. For cardio, the distance travled can be tracked.
 
 ## Tech Used
 
