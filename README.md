@@ -4,7 +4,7 @@
 
 ## Tech Used
 
-HTML, CSS, Bootstrap, JavaScript
+HTML, CSS, Bootstrap, JavaScript, MongoDB, Mongoose, Express
 
 ## Instructions
 
