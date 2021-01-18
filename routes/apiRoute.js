@@ -24,7 +24,9 @@ router.get('/api/workouts', (req, res) => {
         });
 });
 
-router.get
+router.get('/api/workouts/range', ({ query }, res) => {
+    Workout.find
+})
 
 router.put
 
