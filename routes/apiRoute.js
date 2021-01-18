@@ -13,7 +13,16 @@ router.post('/api/workouts', (req, res) => {
         });
 });
 
-router.get
+router.get('/api/workouts', (req, res) => {
+    Workout.find({})
+        .limit(5)
+        .then((dbWorkout) => {
+            res.json(dbWorkout);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
+});
 
 router.get
 
