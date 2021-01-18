@@ -3,7 +3,15 @@ const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 
-router.post
+router.post('/api/workouts', (req, res) => {
+    Workout.create({})
+        .then((dbWorkout) => {
+            res.json(dbWorkout);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
+});
 
 router.get
 
