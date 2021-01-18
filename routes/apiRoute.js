@@ -1,6 +1,7 @@
 const Workout = require("../models/workout");
 const mongoose = require("mongoose");
 const express = require("express");
+const { db } = require("../models/workout");
 const router = express.Router();
 
 router.post('/api/workouts', (req, res) => {
@@ -34,6 +35,17 @@ router.get('/api/workouts/range', ({ query }, res) => {
         });
 });
 
-router.put
+router.put('/api/workouts/:id', ({ body, params }, res) => {
+    Workout.findByIdAndUpdate(params.id,
+        { $push: { exercises: body } },
+        { new: true, runValidators: true }
+        )
+            .then((dbWorkout) => {
+                res.json(dbWorkout);
+            })
+            .catch((err) => {
+                res.json(err);
+            });
+});
 
 module.exports = router;
