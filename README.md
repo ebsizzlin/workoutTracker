@@ -10,6 +10,6 @@ HTML, CSS, Bootstrap, JavaScript
 
 ## Heroku Link
 
-## Screenshots
+https://hidden-shelf-72114.herokuapp.com/
 
-## Walkthrough
+## Screenshots
