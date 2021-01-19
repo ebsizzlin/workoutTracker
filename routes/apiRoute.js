@@ -1,12 +1,13 @@
 const Workout = require("../models/workout");
 const mongoose = require("mongoose");
 const express = require("express");
+const { db } = require("../models/workout");
 // const { db } = require("../models/workout");
 const router = express.Router();
 
 router.post('/api/workouts', (req, res) => {
     Workout.create({})
-        .then((dbWorkout) => {
+    .then((dbWorkout) => {
             res.json(dbWorkout);
         })
         .catch((err) => {
@@ -18,7 +19,8 @@ router.get('/api/workouts', (req, res) => {
     Workout.find({})
         .limit(5)
         .then((dbWorkout) => {
-            res.json(dbWorkout);
+            console.log("dbWorkout",dbWorkout);
+            res.json([...dbWorkout]);
         })
         .catch((err) => {
             res.json(err);
