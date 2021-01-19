@@ -22,6 +22,11 @@ const workoutSchema = new Schema(
             },
         ],
     },
+    // {
+    //     toJSON: {
+    //       virtuals: true,
+    //     },
+    // },
 );
 
 workoutSchema.virtual('totalDuration').get( () => {
