@@ -1,7 +1,7 @@
 const Workout = require("../models/workout");
 const mongoose = require("mongoose");
 const express = require("express");
-const { db } = require("../models/workout");
+// const { db } = require("../models/workout");
 const router = express.Router();
 
 router.post('/api/workouts', (req, res) => {
