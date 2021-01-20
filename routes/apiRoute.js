@@ -1,7 +1,6 @@
 const Workout = require("../models/workout");
 const mongoose = require("mongoose");
 const express = require("express");
-const { db } = require("../models/workout");
 const router = express.Router();
 
 // /api/workouts get and post
@@ -37,8 +36,9 @@ router.get('/api/workouts/range', (req, res) => {
         });
 });
 
-router.get('/api/workouts/range', (req, res) => {
+router.post('/api/workouts/range', (req, res) => {
     Workout.find({})
+        .limit(7)
         .then((dbWorkout) => {
             res.json(dbWorkout);
         })
