@@ -22,7 +22,7 @@ function generatePalette() {
 }
 
 function populateChart(data) {
-  let durations = data.map(({ totalDuration }) => totalDuration);
+  let durations = data.map((totalDuration) => {totalDuration; console.log("totalDuration", totalDuration); return totalDuration});
   let pounds = calculateTotalWeight(data);
   let workouts = workoutNames(data);
   const colors = generatePalette();
