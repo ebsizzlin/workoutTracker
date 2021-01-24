@@ -12,6 +12,8 @@ HTML, CSS, Bootstrap, JavaScript, MongoDB, Mongoose, Express
 
 https://hidden-shelf-72114.herokuapp.com/
 
+Always works locally, but only works every other time on Heroku.
+
 ## Screenshots
 
 <img width="1280" alt="Screen Shot 2021-01-19 at 10 50 53 PM" src="https://user-images.githubusercontent.com/70185995/105124771-d802cd80-5aa8-11eb-9e2c-904d5698d244.png">
