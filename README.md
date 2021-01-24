@@ -12,7 +12,7 @@ HTML, CSS, Bootstrap, JavaScript, MongoDB, Mongoose, Express
 
 https://hidden-shelf-72114.herokuapp.com/
 
-Always works locally, but only works every other time on Heroku.
+Duration table doesn't seem to populate.
 
 ## Screenshots
 
