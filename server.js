@@ -9,6 +9,7 @@ const app = express();
 
 app.use(logger("dev"));
 
+app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -31,5 +32,3 @@ require("./routes/htmlRoute.js")(app);
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
-
-module.exports = db;
