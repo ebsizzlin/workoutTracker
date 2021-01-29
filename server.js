@@ -3,7 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const router = require("./routes/apiRoute.js");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-let db = mongoose.connect(
+mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/workouts",
   {
     useUnifiedTopology: true,
