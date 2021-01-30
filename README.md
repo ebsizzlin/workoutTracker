@@ -12,9 +12,7 @@ HTML, CSS, Bootstrap, JavaScript, MongoDB, Mongoose, Express
 
 https://hidden-shelf-72114.herokuapp.com/
 
-Duration table doesn't seem to populate.
-
 ## Screenshots
 
-<img width="1280" alt="Screen Shot 2021-01-19 at 10 50 53 PM" src="https://user-images.githubusercontent.com/70185995/105124771-d802cd80-5aa8-11eb-9e2c-904d5698d244.png">
-<img width="1280" alt="Screen Shot 2021-01-19 at 10 21 23 PM" src="https://user-images.githubusercontent.com/70185995/105122747-ca4b4900-5aa4-11eb-9bf7-3313881399cc.png">
+<img width="1320" alt="Screen Shot 2021-01-29 at 10 14 47 PM" src="https://user-images.githubusercontent.com/70185995/106345644-b4493f80-627f-11eb-88d1-71e7f7dbfa0d.png">
+<img width="1318" alt="Screen Shot 2021-01-29 at 10 15 12 PM" src="https://user-images.githubusercontent.com/70185995/106345645-b4e1d600-627f-11eb-84f1-21ed8f077953.png">
