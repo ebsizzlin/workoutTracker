@@ -17,16 +17,16 @@ const WorkoutSchema = new Schema(
           type: Number,
         },
         weight: {
-            Number,
+          type: Number,
         },
         reps: {
-            Number,
+          type: Number,
         },
         sets: {
-            Number,
+          type: Number,
         },
         distance: {
-            Number,
+          type: Number,
         }
       }
     ]
@@ -38,12 +38,27 @@ const WorkoutSchema = new Schema(
   }
 );
 
+//mdn reduce, array.map
 WorkoutSchema.virtual("totalDuration").get(function () {
   const duration = this.exercises.reduce((acc, cur) => {
     return acc + cur.duration;
   }, 0);
 
   return duration;
+});
+
+//acc = accumulator, cur = current value
+WorkoutSchema.virtual("totalDistance").get(function () {
+  const distance = this.exercises.reduce((acc, cur) => {
+    if(cur.age) {
+      return acc + cur.distance;
+    }
+
+    return acc;
+
+  }, 0);
+
+  return distance;
 });
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
